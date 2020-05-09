@@ -201,7 +201,7 @@ pm () {
     delete_project_property $1 $2
 
     # Add the config
-    sed -i "/$1:.*/ a $2=${3}" $PFILE
+    sed -i "/$1:.*/ a $2==${3}" $PFILE
   }
 
   #
@@ -257,7 +257,7 @@ pm () {
     while read line
     do
       if [[ "$in_project" == "yes" ]]; then
-        config=(${line//=/ })
+        config=(${line//==/ })
         if [[ "x${config[0]}" == "x$2" ]]; then
           tlen=${#config[@]}
           # We need to iterate because we are using line substitution to
