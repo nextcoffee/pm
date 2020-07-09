@@ -6,7 +6,7 @@ To install the program, download the installer and execute it.
 
 ```zsh
 cd ~
-wget https://raw.githubusercontent.com/Angelmmiguel/pm/master/install.sh
+wget https://raw.githubusercontent.com/nextcoffee/pm/master/install.sh
 chmod 755 ./install.sh
 ```
 
@@ -122,7 +122,7 @@ The folder /usr/local/share/zsh/site-functions/ is a good place for that.
 
 # Example
 
-![Example of PM in a gif](https://raw.githubusercontent.com/Angelmmiguel/pm/master/pm.gif)
+![Example of PM in a gif](https://raw.githubusercontent.com/nextcoffee/pm/master/pm.gif)
 
 # Contribute
 

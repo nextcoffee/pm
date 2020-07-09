@@ -12,7 +12,7 @@ PRERELEASE="no"
 # Show a message that selected shell is not currently available.
 #
 shell_not_available () {
-  echo "Now, your console isn't available :(. Create an issue on: https://github.com/Angelmmiguel/pm/issues."
+  echo "Now, your console isn't available :(. Create an issue on: https://github.com/nextcoffee/pm/issues."
 }
 
 # Check if requested version is a prerelease
@@ -61,10 +61,10 @@ case "$console" in
       mkdir $PM_BASE
     fi
 
-    $(wget --quiet https://raw.githubusercontent.com/Angelmmiguel/pm/${VERSION}/zsh/pm.zsh -o /tmp/pm.zsh)
+    $(wget --quiet https://raw.githubusercontent.com/nextcoffee/pm/${VERSION}/zsh/pm.zsh -o /tmp/pm.zsh)
     mv /tmp/pm.zsh $PM_BASE
 
-    $(wget --quiet https://raw.githubusercontent.com/Angelmmiguel/pm/${VERSION}/zsh/_pm -o /tmp/_pm)
+    $(wget --quiet https://raw.githubusercontent.com/nextcoffee/pm/${VERSION}/zsh/_pm -o /tmp/_pm)
     mv /tmp/_pm $ZSH_CUSTOM/plugins/pm/_pm
 
     # Add the function to the console
@@ -97,7 +97,7 @@ case "$console" in
     if [ "$FROM_UPDATE" = "no" ]; then
       mkdir $PM_BASE
     fi
-    $(wget --quiet https://raw.githubusercontent.com/Angelmmiguel/pm/${VERSION}/bash/pm.bash -o /tmp/pm.bash)
+    $(wget --quiet https://raw.githubusercontent.com/nextcoffee/pm/${VERSION}/bash/pm.bash -o /tmp/pm.bash)
     mv /tmp/pm.bash $PM_BASE
 
     # Add the function to the console
